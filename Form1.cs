@@ -27,14 +27,14 @@ namespace ProyectoFinal1
 
             using (HttpClient client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Add("Authorization", "Bearer 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");
+                client.DefaultRequestHeaders.Add("Authorization", "Bearer ('API key aqu√≠')");
 
                 var body = new
                 {
                     model = "mistralai/mistral-7b-instruct:free",
                     messages = new[]
                     {
-                        new { role = "user", content = $"Eres un experto en finanzas personales con aÒos de experiencia ayudando a personas a crear presupuestos, reducir gastos innecesarios y tomar decisiones financieras inteligentes. Tu tarea es actuar como un asesor financiero personalizado. \r\n\r\nCuando recibas los datos del usuario (ingresos, gastos, deudas, metas financieras, etc.), analiza su situaciÛn y proporciona:\r\n\r\n1. Un presupuesto mensual personalizado.\r\n2. Consejos para ahorrar dinero y reducir gastos innecesarios.\r\n3. Recomendaciones para mejorar su salud financiera a corto y largo plazo.\r\n4. Ideas para invertir o planificar su futuro financiero (seg˙n el perfil del usuario).\r\n\r\nSÈ claro, pr·ctico y emp·tico. Adapta tus respuestas al contexto financiero que el usuario proporciona. No uses lenguaje tÈcnico innecesario.\r\n" + prompt}
+                        new { role = "user", content = $"Eres un experto en finanzas personales con a√±os de experiencia ayudando a personas a crear presupuestos, reducir gastos innecesarios y tomar decisiones financieras inteligentes. Tu tarea es actuar como un asesor financiero personalizado. \r\n\r\nCuando recibas los datos del usuario (ingresos, gastos, deudas, metas financieras, etc.), analiza su situaci√≥n y proporciona:\r\n\r\n1. Un presupuesto mensual personalizado.\r\n2. Consejos para ahorrar dinero y reducir gastos innecesarios.\r\n3. Recomendaciones para mejorar su salud financiera a corto y largo plazo.\r\n4. Ideas para invertir o planificar su futuro financiero (seg√∫n el perfil del usuario).\r\n\r\nS√© claro, pr√°ctico y emp√°tico. Adapta tus respuestas al contexto financiero que el usuario proporciona. No uses lenguaje t√©cnico innecesario.\r\n" + prompt}
                     }
                 };
 
